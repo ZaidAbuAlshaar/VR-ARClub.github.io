@@ -116,6 +116,35 @@
             box-shadow: 0 0 15px #a855f7, inset 0 0 10px #3b82f6;
         }
 
+        /* Chat button style */
+        #chat-button {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #a855f7, #3b82f6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(168, 85, 247, 0.5);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        #chat-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(168, 85, 247, 0.7);
+        }
+        
+        #chat-button svg {
+            width: 28px;
+            height: 28px;
+        }
+
         /* Mobile responsiveness improvements */
         @media (max-width: 768px) {
             .hero-bg h1 {
@@ -139,6 +168,66 @@
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
+            
+            /* Improved mobile navbar */
+            .mobile-nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 0.5rem 1rem;
+            }
+            
+            .mobile-nav-brand {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: transparent;
+                background-clip: text;
+                background-image: linear-gradient(to right, #a855f7, #3b82f6);
+            }
+            
+            .mobile-nav-buttons {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+            
+            .mobile-menu-button {
+                padding: 0.5rem;
+                border-radius: 0.375rem;
+                background-color: #a855f7;
+                color: white;
+            }
+            
+            .mobile-menu-button svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            
+            /* Mobile menu items */
+            #mobile-menu a {
+                padding: 1rem;
+                font-size: 1.1rem;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            #mobile-menu a:last-child {
+                border-bottom: none;
+            }
+            
+            /* Adjust navbar spacing for Arabic */
+            body[style*="direction: rtl"] .hidden.md\\:flex.space-x-8 {
+                gap: 1.5rem;
+            }
+            
+            /* Chat button on mobile */
+            #chat-button {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+            }
         }
 
         @media (max-width: 640px) {
@@ -154,6 +243,41 @@
             .grid-cols-2 {
                 grid-template-columns: 1fr;
             }
+            
+            /* Further adjustments for very small screens */
+            .mobile-nav-brand {
+                font-size: 1.3rem;
+            }
+            
+            .mobile-nav-buttons {
+                gap: 0.5rem;
+            }
+            
+            .mobile-menu-button {
+                padding: 0.4rem;
+            }
+            
+            .mobile-menu-button svg {
+                width: 1.3rem;
+                height: 1.3rem;
+            }
+        }
+        
+        /* Adjust navbar spacing for Arabic */
+        body[style*="direction: rtl"] .hidden.md\:flex.space-x-8 {
+            gap: 1.5rem;
+        }
+        
+        /* Improved navbar for mobile */
+        @media (max-width: 768px) {
+            nav.container {
+                padding: 0.75rem 1rem;
+            }
+            
+            #mobile-menu {
+                width: 100%;
+                left: 0;
+            }
         }
     </style>
 </head>
@@ -161,13 +285,13 @@
 
     <!-- Navbar -->
     <header class="bg-gray-900 sticky top-0 z-50 shadow-lg">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
             <a href="#home" class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500" data-translate-key="club_name">VR & AR Club</a>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 items-center">
-                <a href="#home" class="text-gray-300 hover:text-white transition duration-300" data-translate-key="nav_home">Home</a>
-                <a href="#about" class="text-gray-300 hover:text-white transition duration-300" data-translate-key="nav_about">About Us</a>
+                <a href="#home" class="text-gray-300 hover:text-white transition duration-300" data-translate-key="nav_home"> Home </a>
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300" data-translate-key="nav_about"> About Us </a>
                 <a href="#activities" class="text-gray-300 hover:text-white transition duration-300" data-translate-key="nav_activities">Activities</a>
                 <a href="#join-us" class="text-gray-300 hover:text-white transition duration-300" data-translate-key="nav_join">Join Us</a>
                 <!-- Language Toggle Button -->
@@ -451,6 +575,13 @@
         </div>
     </footer>
     
+    <!-- Chat Button -->
+    <div id="chat-button" title="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+        </svg>
+    </div>
+    
     <!-- JavaScript for language switching and mobile menu -->
     <script>
         // Define translations object
@@ -481,7 +612,6 @@
             'founder_2_name': { 'en': 'Abdalrahman AL-Haymouni', 'ar': ' عبدالرحمن الهيموني' },
             'founder_2_role': { 'en': 'Co-Founder', 'ar': 'مؤسس مشارك' },
             'influential_members_title': { 'en': 'Influential Club Members', 'ar': 'أعضاء النادي المؤثرون' },
-            'member_name': { 'en': 'Member', 'ar': 'عضو' },
             'activities_title': { 'en': 'Activities & Events', 'ar': 'الأنشطة والفعاليات' },
             'event_1_title': { 'en': 'Introduction to Unity', 'ar': 'مقدمة إلى Unity' },
             'event_1_text': { 'en': 'A beginner-friendly workshop covering the basics of Unity for VR development.', 'ar': 'ورشة عمل للمبتدئين تغطي أساسيات Unity لتطوير تطبيقات الواقع الافتراضي.' },
@@ -571,10 +701,31 @@
             });
         });
 
+        // Chat button functionality (scroll to top)
+        const chatButton = document.getElementById('chat-button');
+        chatButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Show/hide chat button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                chatButton.style.display = 'flex';
+            } else {
+                chatButton.style.display = 'none';
+            }
+        });
+
         // Set initial language on page load
         document.addEventListener('DOMContentLoaded', () => {
             const savedLang = localStorage.getItem('language') || 'en';
             setLanguage(savedLang);
+            
+            // Hide chat button initially
+            chatButton.style.display = 'none';
         });
     </script>
 </body>
