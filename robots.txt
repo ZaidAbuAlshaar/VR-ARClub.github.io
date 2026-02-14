@@ -1,0 +1,48 @@
+# robots.txt for VR & AR Club - Petra University
+# Website for Computer Science Virtual Reality & Augmented Reality Student Community
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vr-arclub.github.io/sitemap.xml
+
+# Crawl delay (optional - be respectful to search engines)
+Crawl-delay: 1
+
+# Block common bot paths (if you add admin sections in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block bad bots (spam, scrapers)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
