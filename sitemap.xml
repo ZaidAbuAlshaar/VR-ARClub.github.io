@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Main Page -->
+  <url>
+    <loc>https://vr-arclub.github.io/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vr-arclub.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://vr-arclub.github.io/"/>
+
+    <!-- Images for main page -->
+    <image:image>
+      <image:loc>https://vr-arclub.github.io/6U8A0156_1_11zon.jpg</image:loc>
+      <image:caption>Zaid Abu Alshaar - Co-Founder of Petra University VR & AR Club</image:caption>
+      <image:title>VR AR Club Co-Founder</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vr-arclub.github.io/Abdalrahman-AL-Haymouni2.webp</image:loc>
+      <image:caption>Abdalrahman AL-Haymouni - Co-Founder of Petra University VR & AR Club</image:caption>
+      <image:title>VR AR Club Co-Founder</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vr-arclub.github.io/unityImage.jpg</image:loc>
+      <image:caption>Introduction to Unity Workshop - VR Development Training</image:caption>
+      <image:title>Unity VR Workshop Petra University</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vr-arclub.github.io/arimage%20(1).jpg</image:loc>
+      <image:caption>AR Hackathon 2024 - Augmented Reality Competition</image:caption>
+      <image:title>AR Hackathon Petra University</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://vr-arclub.github.io/3dModiling.png</image:loc>
+      <image:caption>3D Modeling with Blender Workshop</image:caption>
+      <image:title>Blender 3D Workshop</image:title>
+    </image:image>
+  </url>
+
+  <!-- Home Section -->
+  <url>
+    <loc>https://vr-arclub.github.io/#home</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://vr-arclub.github.io/#about</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Activities Section -->
+  <url>
+    <loc>https://vr-arclub.github.io/#activities</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Join Us Section -->
+  <url>
+    <loc>https://vr-arclub.github.io/#join-us</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
